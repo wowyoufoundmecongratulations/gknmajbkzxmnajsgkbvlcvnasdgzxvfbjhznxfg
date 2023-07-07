@@ -1113,7 +1113,7 @@ class Sniper:
 
     async def start(self):
             coroutines = []
-            # coroutines.append(self.connect_websocket())
+            coroutines.append(self.connect_websocket())
             coroutines.append(self.given_id_sniper())
             coroutines.append(self.auto_xtoken())
             await asyncio.gather(*coroutines)
